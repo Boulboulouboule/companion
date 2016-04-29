@@ -11,6 +11,8 @@ module.exports = {
   },
   dev: {
     port: 8080,
-    proxyTable: {}
+    proxyTable: {
+      '/items': 'http://localhost/companion'
+    }
   }
 }
